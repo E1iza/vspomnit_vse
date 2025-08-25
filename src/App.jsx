@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 // import Header from './components/Header.jsx'
 import MainPage from './components/MainPage'
+import Mission from './components/Mission'
 // import { testData } from './data';
 
 function TestUl({ data }) {
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <MainPage />
+      <Mission />
     </>
   )
 }

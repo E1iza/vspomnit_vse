@@ -4,8 +4,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'О проекте', href: '#' },
-  { name: 'Фотогалерея', href: '#' },
-  { name: 'Контакты', href: '#' },
+  { name: 'Карта экспедиций', href: '#' },
+  { name: 'Присоединиться', href: '#' },
 ]
 
 export default function MainPage() {
@@ -15,7 +15,7 @@ export default function MainPage() {
     <div className="bg-white dark:bg-gray-900 height-auto">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
-          <div className="flex lg:flex-1">
+          <div className="flex lg:flex-1 items-center">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
@@ -24,6 +24,7 @@ export default function MainPage() {
                 className="h-24 w-auto dark:hidden"
               />
             </a>
+            <span className='text-white p-0 ml-4'>Собираем память &mdash;<br/> преображаем будущее</span>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -110,10 +111,10 @@ export default function MainPage() {
           <div className="mx-auto max-w-2xl mt-30">
             <div className="text-center">
               <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl dark:text-white">
-                Экспедиция &laquo;Вспомнить всё&raquo;
+                Экспедиции &laquo;Вспомнить всё&raquo;
               </h1>
-              <p className="mt-6 text-lg font-medium text-pretty text-amber-900 sm:text-xl/8 dark:text-gray-400">
-                Соприкасаясь с прошлым - строим будущее.
+              <p className="mt-6 text-lg font-medium text-pretty text-white sm:text-xl/8 dark:text-gray-400">
+                Краеведческие экспедиции по России для подростков
               </p>
             </div>
           </div>
