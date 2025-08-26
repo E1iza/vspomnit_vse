@@ -24,7 +24,7 @@ export default function MainPage() {
                 className="h-24 w-auto dark:hidden"
               />
             </a>
-            <span className='text-white p-0 ml-4'>Собираем память &mdash;<br/> преображаем будущее</span>
+            <span className='text-white p-0 ml-4'>Сохраняем память &mdash;<br/> преображаем будущее</span>
           </div>
           <div className="flex lg:hidden">
             <button

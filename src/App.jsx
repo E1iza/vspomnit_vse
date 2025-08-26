@@ -2,6 +2,7 @@
 // import Header from './components/Header.jsx'
 import MainPage from './components/MainPage'
 import Mission from './components/Mission'
+import Directions from "./components/Directions";
 // import { testData } from './data';
 
 function TestUl({ data }) {
@@ -23,6 +24,7 @@ function App() {
     <>
       <MainPage />
       <Mission />
+      <Directions />
     </>
   )
 }
