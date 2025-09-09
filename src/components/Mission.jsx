@@ -3,11 +3,11 @@ export default function Mission() {
     <div className="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
-          <p className="text-base/7 font-semibold text-gray-500 dark:text-indigo-400">О проекте</p>
+          <p className="text-base/7 font-semibold text-gray-500 dark:text-indigo-400">Проект</p>
           <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-cyan-700 sm:text-5xl dark:text-white">
             Экспедиции &laquo;Вспомнить всё&raquo; &mdash;
           </h1>
-          <p className="mt-6 text-xl/8 text-balance text-gray-700 dark:text-gray-300">
+          <p className="mt-4 text-xl/8 text-balance text-gray-700 dark:text-gray-300">
             это любовь к родине через познание и дело.
           </p>
         </div>
