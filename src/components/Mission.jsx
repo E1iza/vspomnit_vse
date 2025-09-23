@@ -3,8 +3,7 @@ export default function Mission() {
     <div className="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="max-w-4xl">
-          <p className="text-base/7 font-semibold text-gray-500 dark:text-indigo-400">Проект</p>
-          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-cyan-700 sm:text-5xl dark:text-white">
+          <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-500 dark:text-white">
             Экспедиции &laquo;Вспомнить всё&raquo; &mdash;
           </h1>
           <p className="mt-4 text-xl/8 text-balance text-gray-700 dark:text-gray-300">
@@ -13,7 +12,7 @@ export default function Mission() {
         </div>
         <section className="mt-20 grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 lg:gap-y-16">
           <div className="lg:pr-8">
-            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-500 dark:text-white">
+            <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight text-pretty text-cyan-700 dark:text-white">
               Наша миссия
             </h2>
             <p className="mt-6 text-base/7 text-gray-600 dark:text-gray-400">
@@ -45,7 +44,7 @@ export default function Mission() {
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 dark:shadow-none dark:outline-white/10">
                 <img
                   alt=""
-                  src={'/src/assets/mission/mission3_2.jpg'}
+                  src={'/src/assets/mission/mission3.jpg'}
                   className="block size-full object-cover"
                 />
               </div>

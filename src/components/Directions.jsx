@@ -4,7 +4,7 @@ export default function Directions() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8 max-h-[100vh]">
         <div className="flex flex-col">
           <div>
-            <div className="flex flex-col items-center justify-center w-1/2">
+            <div className="flex flex-col items-center justify-center w-1/2 relative">
               <img
                 alt=""
                 src={'/src/assets/directions/mountens.svg'}
@@ -17,6 +17,11 @@ export default function Directions() {
                 Походный быт учит простым истинам: ценить тепло костра, вкус родниковой воды и красоту звездного неба.
                 Пешие походы и сплавы по рекам, велосипедные маршруты и восхождения — каждая экспедиция предлагает новый вызов.
               </p>
+              <img
+                alt=""
+                src={'/src/assets/directions/traces2.svg'}
+                className="object-cover absolute top-55 w-56 -left-50"
+              />
             </div>
           </div>
           <div className="flex mt-32">
@@ -27,17 +32,17 @@ export default function Directions() {
               <img
                 alt=""
                 src={'/src/assets/directions/traces.svg'}
-                className="object-cover absolute bottom-120 w-2/5 -right-40"
+                className="object-cover absolute bottom-120 w-64 -right-50"
               />
             </div>
             <div className="flex-1/2 pl-12 relative -top-64">
-              <div className="flex-col flex items-center relative">
+              <div className="flex-col flex items-center relative w-full">
                 <img
                   alt=""
                   src={'/src/assets/directions/nalichnik.png'}
                   className="w-full object-cover absolute"
                 />
-                <h3 className="text-4xl mt-36 mb-6 font-semibold tracking-tight text-pretty text-[#552A00]">краеведение</h3>
+                <h3 className="text-4xl mt-24 mb-6 font-semibold tracking-tight text-pretty text-[#552A00]">краеведение</h3>
                 <p className="text-xs sm:text-base mx-32 text-gray-600 dark:text-gray-200 text-justify">
                   Краеведение в наших экспедициях подразумевает изучение природы, историю и культуру конкретного региона,
                   собирая материалы через полевые экспедиции, архивные исследования и интервью с местными жителями.
@@ -62,6 +67,11 @@ export default function Directions() {
                 Для нас волонтёрство — это диалог с прошлым, который помогает преобразовывать будущее.
               </p>
             </div>
+            <img
+              alt=""
+              src={'/src/assets/directions/traces3.svg'}
+              className="object-cover absolute bottom-0 w-80 -right-90"
+            />
           </div>
         </div>
       </div>
