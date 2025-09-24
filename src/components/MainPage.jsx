@@ -121,7 +121,7 @@ export default function MainPage() {
           <div className="mb-12 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              className="rounded-xl bg-cyan-700 px-3.5 py-4 text-md font-semibold text-white shadow-xs hover:bg-cyan-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500"
+              className="rounded-xl bg-cyan-700 px-2.5 py-3 md:px-3.5 md:py-4 text-md font-semibold text-white shadow-xs hover:bg-cyan-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500"
             >
               Отправиться в экспедицию
             </a>

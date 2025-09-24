@@ -1,20 +1,20 @@
 const incentives = [
   {
     name: 'Гуманная педагогика',
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-shipping-simple.svg',
+    imageSrc: '/src/assets/principles/icon1.svg',
     description: "В работе с подростками разделяем и применяем педагогические ценности, описанные в трудах следующих авторов: " +
       "Януш Корчак, Людмила Петрановская, Симон Соловейчик, Василий Зеньковский и других.",
   },
   {
     name: 'Самостоятельность и адаптивность',
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-warranty-simple.svg',
+    imageSrc: '/src/assets/principles/icon2.svg',
     description: "Ночуем в палатках и самостоятельно организовываем кемпинговую зону.\n" +
       "Каждый имеет зоны ответственности, дежурства и обязанностей, " +
       "что формирует дисциплину, взаимопомощь и способность быстро адаптироваться к внешним условиям.",
   },
   {
     name: 'Обучение через дело',
-    imageSrc: 'https://tailwindcss.com/plus-assets/img/ecommerce/icons/icon-exchange-simple.svg',
+    imageSrc: '/src/assets/principles/icon3.svg',
     description:
       "В ходе экспедиции ребята учатся коммуникациям друг с другом, приобретают навык работы в команде, " +
       "умение анализировать информацию и принимать решения, а также навыки походной жизни.",
