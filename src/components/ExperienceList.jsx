@@ -3,71 +3,51 @@ import {useState} from "react";
 const products = [
   {
     id: 1,
-    href: '#',
     description: 'Петя научился ставить палатку',
-    imageSrc: '/src/assets/experience/1.jpg',
+    imageSrc: '/src/assets/experience/image1.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 2,
-    href: '#',
-    description: '',
-    imageSrc: '',
-    imageAlt: '',
+    description: 'Петя научился ставить палатку',
+    imageSrc: '/src/assets/experience/image2.png',
+    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 3,
-    href: '#',
     description: 'Петя научился ставить палатку',
-    imageSrc: '/src/assets/experience/1.jpg',
+    imageSrc: '/src/assets/experience/image3.png',
     imageAlt: 'Brass scissors with geometric design, black steel finger holes, and included upright brass stand.',
   },
   {
     id: 4,
-    href: '#',
-    description: '',
-    imageSrc: '',
-    imageAlt: '',
-  },
-  {
-    id: 5,
-    href: '#',
     description: 'Петя научился ставить палатку',
-    imageSrc: '/src/assets/experience/2.jpg',
-    imageAlt: 'Textured gray felt pouch for paper cards with snap button flap and elastic pen holder loop.',
-  },
-  {
-    id: 6,
-    href: '#',
-    description: '',
-    imageSrc: '',
-    imageAlt: '',
-  },
-  {
-    id: 7,
-    href: '#',
-    description: 'Петя научился ставить палатку',
-    imageSrc: '/src/assets/experience/1.jpg',
+    imageSrc: '/src/assets/experience/image4.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
-    id: 8,
-    href: '#',
-    description: '',
-    imageSrc: '',
-    imageAlt: '',
+    id: 5,
+    description: 'Петя научился ставить палатку',
+    imageSrc: '/src/assets/experience/image5.png',
+    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
-    id: 9,
-    href: '#',
+    id: 6,
     description: 'Петя научился ставить палатку',
-    imageSrc: '/src/assets/experience/1.jpg',
-    imageAlt: 'Brass scissors with geometric design, black steel finger holes, and included upright brass stand.',
+    imageSrc: '/src/assets/experience/image6.png',
+    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+  },
+  {
+    id: 7,
+    description: 'Петя научился ставить палатку',
+    imageSrc: '/src/assets/experience/image7.png',
+    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
 ]
 
 export default function ExperienceList() {
   const [isShowText, setIsShowText] = useState(false);
+
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
@@ -75,31 +55,32 @@ export default function ExperienceList() {
           В нашей экспедиции
         </h2>
 
-        <div className="grid grid-cols-3 gap-4 mt-24 grid-rows-auto">
+        <div className="grid grid-cols-1 mt-24">
           {products.map((product) => (
             <div key={product.id}
-               onMouseEnter={() => setIsShowText(product.id)}
-               onMouseLeave={() => setIsShowText(false)}
+               // onMouseEnter={() => setIsShowText(product.id)}
+               // onMouseLeave={() => setIsShowText(false)}
                className={`
-                flex justify-between
+                flex justify-between relative ${product.id % 2 === 0 ? 'flex-row-reverse' : ''}
             `}>
-              {isShowText === product.id ?
-                (<div className="w-full flex justify-center items-center p-0">
-                  <p
-                  className="mt-1 text-3xl text-gray-500 italic text-center">
-                  {product.description}
-                  </p>
-                </div>)
-
-              : (<div className="w-full flex justify-center items-center overflow-hidden ">
-                <img
-                  alt={product.imageAlt}
-                  src={product.imageSrc}
-                  className="w-full rounded-lg object-cover group-hover:opacity-75"
-                />
+              <div className="flex flex-1/3 justify-center items-center p-0">
+                <p
+                className="mt-1 text-base text-gray-500 italic text-center">
+                {product.description}
+                </p>
               </div>
-                )
-              }
+                <div
+                  className="hexagon flex-2/3 w-full h-full overflow-hidden relative"
+                  style={{
+                    clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
+                  }}
+                >
+                  <img
+                    alt={product.imageAlt}
+                    src={product.imageSrc}
+                    className="object-cover"
+                  />
+              </div>
             </div>
           ))}
         </div>

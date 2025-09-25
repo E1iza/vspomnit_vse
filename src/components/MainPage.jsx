@@ -98,30 +98,33 @@ export default function MainPage() {
       </header>
 
       <div className="relative isolate overflow-hidden pt-14 h-[100vh]">
-        <div
-          className="absolute inset-0 -z-9 bg-black opacity-20"
-        />
-        <img
-          alt="main"
-          src={'/src/assets/main.png'}
-          className="absolute inset-0 -z-10 w-full h-full object-cover opacity-100 dark:hidden"
-        />
-
+        <div className="">
+          <div
+            className="absolute inset-0 -z-9 bg-black opacity-20"
+          />
+          <img
+            alt="main"
+            src={'/src/assets/main.png'}
+            className="absolute inset-0 -z-10 w-full h-full object-cover opacity-100"
+          />
+        </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 h-full flex flex-col justify-between">
           <div className="mx-auto max-w-2xl mt-30">
             <div className="text-center">
-              <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl dark:text-white">
+              <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl dark:text-white animate-init-hidden animate-fade-in-up animation-delay-400">
                 Экспедиции &laquo;Вспомнить всё&raquo;
               </h1>
-              <p className="mt-6 text-lg font-medium text-pretty text-white sm:text-xl/8 dark:text-gray-400">
+              <p className="mt-6 text-lg font-medium text-pretty text-white sm:text-xl/8 dark:text-gray-400 animate-init-hidden animate-fade-in-up animation-delay-500">
                 Краеведческие экспедиции по России для подростков
               </p>
             </div>
           </div>
-          <div className="mb-12 flex items-center justify-center gap-x-6">
+          <div className="mb-12 flex items-center justify-center gap-x-6 animate-init-hidden animate-fade-in-up animation-delay-700">
             <a
               href="#"
-              className="rounded-xl bg-cyan-700 px-2.5 py-3 md:px-3.5 md:py-4 text-md font-semibold text-white shadow-xs hover:bg-cyan-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500"
+              className="rounded-xl bg-cyan-700 px-2.5 py-3 md:px-3.5 md:py-4 text-md font-semibold text-white shadow-xs
+              hover:bg-cyan-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
+              transition-all duration-300 transform hover:scale-105"
             >
               Отправиться в экспедицию
             </a>

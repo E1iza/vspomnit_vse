@@ -40,7 +40,7 @@ export default function Principles() {
             </div>
             <img
               alt=""
-              src={'/src/assets/principles/main.png'}
+              src={'/src/assets/principles/main.jpg'}
               className="aspect-3/2 w-full rounded-lg bg-gray-100 object-cover"
             />
           </div>
