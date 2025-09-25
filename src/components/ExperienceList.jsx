@@ -21,7 +21,7 @@ const products = [
   },
   {
     id: 4,
-    description: 'Коля сплавился на рафте по реке Кокса и снял об этом влог',
+    description: 'Коля сплавился на рафте по горной реке и снял об этом влог',
     imageSrc: '/src/assets/experience/image4.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
@@ -55,7 +55,7 @@ export default function ExperienceList() {
           В нашей экспедиции
         </h2>
 
-        <div className="grid grid-cols-1 mt-24 lg:grid-cols-3 gap-0">
+        <div className="grid grid-cols-1 mt-24 lg:grid-cols-3 lg:grid-rows-3 gap-0">
           {products.map((product) => (
             <div key={product.id}
                onMouseEnter={() => setIsShowText(product.id)}
@@ -72,11 +72,11 @@ export default function ExperienceList() {
               <div className={`
                 relative flex-2/3 p-0 m-0
                 ${product.id === 1 || product.id === 4 
-                ? 'top-1/2 left-1/4' : ''} 
+                ? 'lg:top-1/2 lg:left-1/4' : ''} 
                 ${product.id === 3 || product.id === 6
-                ? 'top-1/2 right-1/4' : ''} 
+                ? 'lg:top-1/2 lg:right-1/4' : ''} 
                 ${product.id === 7 
-                ? 'left-2/2' : ''}
+                ? 'lg:left-2/2' : ''}
                 `}>
                 <div
                   className={`w-full h-full overflow-hidden p-1 sm:p-2 bg-cyan-700 m-0 z-10 flex items-center justify-center
@@ -98,7 +98,7 @@ export default function ExperienceList() {
                   />
                   <div
                     className={`
-                      bg-white w-[28vw] h-[24vw] hidden p-12
+                      bg-white w-[95%] h-[95%] hidden p-10
                       lg:${isShowText === product.id ? 'flex items-center justify-center ' : '' }
                     `}
                     style={{

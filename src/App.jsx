@@ -5,6 +5,8 @@ import Mission from './components/Mission'
 import Directions from "./components/Directions";
 import Principles from "./components/Principles.jsx";
 import ExperienceList from './components/ExperienceList.jsx';
+import Team from "./components/Team.jsx";
+import Footer from "./components/Footer.jsx";
 // import { testData } from './data';
 
 function TestUl({ data }) {
@@ -29,6 +31,9 @@ function App() {
       <Directions />
       <Principles />
       <ExperienceList />
+      <Team/>
+
+      <Footer />
     </>
   )
 }
