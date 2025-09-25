@@ -3,50 +3,50 @@ import {useState} from "react";
 const products = [
   {
     id: 1,
-    description: 'Петя научился ставить палатку',
+    description: 'Денис узнал как работает альпинистская страховка и перестал бояться высоты',
     imageSrc: '/src/assets/experience/image1.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 2,
-    description: 'Петя научился ставить палатку',
+    description: 'Миша научился управлять байдаркой и доплыл до уникальных островов Карелии',
     imageSrc: '/src/assets/experience/image2.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 3,
-    description: 'Петя научился ставить палатку',
+    description: 'Вова увидел снег летом и рассказал об этом своим друзьям',
     imageSrc: '/src/assets/experience/image3.png',
     imageAlt: 'Brass scissors with geometric design, black steel finger holes, and included upright brass stand.',
   },
   {
     id: 4,
-    description: 'Петя научился ставить палатку',
+    description: 'Коля сплавился на рафте по реке Кокса и снял об этом влог',
     imageSrc: '/src/assets/experience/image4.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 5,
-    description: 'Петя научился ставить палатку',
+    description: 'Ваня выполнял обязанности шеф-повара и познал все тонкости полевой кухни',
     imageSrc: '/src/assets/experience/image5.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 6,
-    description: 'Петя научился ставить палатку',
+    description: 'Сережа и Кирилл покорили вершины Алтайского Края и узнали многое о горных породах',
     imageSrc: '/src/assets/experience/image6.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 7,
-    description: 'Петя научился ставить палатку',
+    description: 'Варя и Кристина побывали в Архангельской области и научились народным ремеслам Русского Севера',
     imageSrc: '/src/assets/experience/image7.png',
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
 ]
 
 export default function ExperienceList() {
-  const [isShowText, setIsShowText] = useState(false);
+  // const [isShowText, setIsShowText] = useState(false);
 
   return (
     <div className="bg-white">
@@ -63,14 +63,15 @@ export default function ExperienceList() {
                className={`
                 flex justify-between relative ${product.id % 2 === 0 ? 'flex-row-reverse' : ''}
             `}>
-              <div className="flex flex-1/3 justify-center items-center p-0">
+              <div className={`flex flex-1/3 justify-center items-center ${product.id % 2 === 0 ? 'pl-4' : 'pr-4'}  `}>
                 <p
-                className="mt-1 text-base text-gray-500 italic text-center">
+                className={`mt-1 text-sm sm:text-xl text-gray-500 ${product.id % 2 === 0 ? 'text-right' : ''}`}>
                 {product.description}
                 </p>
               </div>
+              <div className="relative flex-2/3">
                 <div
-                  className="hexagon flex-2/3 w-full h-full overflow-hidden relative"
+                  className="w-full h-full overflow-hidden p-1 sm:p-2 bg-cyan-700"
                   style={{
                     clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
                   }}
@@ -78,8 +79,12 @@ export default function ExperienceList() {
                   <img
                     alt={product.imageAlt}
                     src={product.imageSrc}
-                    className="object-cover"
+                    className="object-cover w-full h-full"
+                    style={{
+                      clipPath: "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"
+                    }}
                   />
+                </div>
               </div>
             </div>
           ))}
