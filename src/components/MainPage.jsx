@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import mainImage from '../assets/main.png'
+import { useMediaQuery } from 'react-responsive'
+import desktopImg from '../assets/main.png'
+import mobileImg from '../assets/main_mobile.png'
 
 const navigation = [
   { name: 'О проекте', href: '#' },
@@ -11,6 +13,7 @@ const navigation = [
 
 export default function MainPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const isMobile = useMediaQuery({ maxWidth: 768 })
 
   return (
     <div className="bg-white dark:bg-gray-900 height-auto">
@@ -105,7 +108,7 @@ export default function MainPage() {
           />
           <img
             alt="main"
-            src={mainImage}
+            src={isMobile ? mobileImg : desktopImg}
             className="absolute inset-0 -z-10 w-full h-full object-cover opacity-100"
           />
         </div>
