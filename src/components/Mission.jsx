@@ -1,3 +1,8 @@
+import mission1 from '../assets/mission/mission1.jpg'
+import mission2 from '../assets/mission/mission2.jpg'
+import mission3 from '../assets/mission/mission3.jpg'
+import mission4 from '../assets/mission/mission4.jpg'
+
 export default function Mission() {
   return (
     <div className="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
@@ -30,28 +35,28 @@ export default function Mission() {
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 dark:shadow-none dark:outline-white/10">
                 <img
                   alt="1"
-                  src={'/src/assets/mission/mission1.jpg'}
+                  src={mission1}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 dark:shadow-none dark:outline-white/10">
                 <img
                   alt=""
-                  src={'/src/assets/mission/mission2.jpg'}
+                  src={mission2}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 dark:shadow-none dark:outline-white/10">
                 <img
                   alt=""
-                  src={'/src/assets/mission/mission3.jpg'}
+                  src={mission3}
                   className="block size-full object-cover"
                 />
               </div>
               <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-40 dark:shadow-none dark:outline-white/10">
                 <img
                   alt=""
-                  src={'/src/assets/mission/mission4.jpg'}
+                  src={mission4}
                   className="block size-full object-cover"
                 />
               </div>

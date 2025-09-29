@@ -1,3 +1,10 @@
+import mountains from '../assets/directions/mountains.svg'
+import nalichnik from '../assets/directions/nalichnik.png'
+import volunteering from '../assets/directions/volunteering.png'
+import traces1 from '../assets/directions/traces1.svg'
+import traces2 from '../assets/directions/traces2.svg'
+import traces3 from '../assets/directions/traces3.svg'
+
 export default function Directions() {
   return (
     <div className="relative overflow-hidden bg-white dark:bg-gray-900">
@@ -6,7 +13,7 @@ export default function Directions() {
           <div className="w-full row-start-2 lg:row-start-1 lg:col-span-2 flex flex-col items-center justify-center lg:w-1/2 relative">
             <img
               alt=""
-              src={'/src/assets/directions/mountens.svg'}
+              src={mountains}
               className="object-cover"
             />
             <h3 className="text-3xl md:text-4xl mb-6 font-semibold tracking-tight text-pretty text-[#1A430B]">туризм</h3>
@@ -18,7 +25,7 @@ export default function Directions() {
             </p>
             <img
               alt=""
-              src={'/src/assets/directions/traces2.svg'}
+              src={traces2}
               className="object-cover absolute top-55 lg:w-32 xl:w-50 lg:-left-20 xl:-left-50 hidden 2xl:block"
             />
           </div>
@@ -28,14 +35,14 @@ export default function Directions() {
             </p>
               <img
                 alt=""
-                src={'/src/assets/directions/traces.svg'}
+                src={traces1}
                 className="object-cover absolute lg:bottom-60 xl:bottom-50 lg:w-62 xl:w-72 lg:-right-40 xl:-right-50 hidden lg:block"
               />
           </div>
           <div className="flex-col row-start-3 flex items-center relative lg:row-start-2">
             <img
               alt=""
-              src={'/src/assets/directions/nalichnik.png'}
+              src={nalichnik}
               className="object-cover"
             />
             <h3 className="text-3xl md:text-4xl -mt-8 mb-6 lg:-mt-12 font-semibold tracking-tight text-pretty text-[#552A00]">краеведение</h3>
@@ -51,7 +58,7 @@ export default function Directions() {
               <div className="flex-col flex w-1/3 relative">
                 <img
                   alt=""
-                  src={'/src/assets/directions/volunteering.png'}
+                  src={volunteering}
                   className="object-cover left-0 bottom-0"
                 />
               </div>
@@ -65,7 +72,7 @@ export default function Directions() {
             </div>
             <img
               alt=""
-              src={'/src/assets/directions/traces3.svg'}
+              src={traces3}
               className="object-cover absolute bottom-10 lg:w-70 xl:w-84 lg:-right-80 xl:-right-90 hidden lg:block"
             />
           </div>

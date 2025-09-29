@@ -1,46 +1,53 @@
 import {useState} from "react";
+import image1 from '../assets/experience/image1.png';
+import image2 from '../assets/experience/image2.png';
+import image3 from '../assets/experience/image3.png';
+import image4 from '../assets/experience/image4.png';
+import image5 from '../assets/experience/image5.png';
+import image6 from '../assets/experience/image6.png';
+import image7 from '../assets/experience/image7.png';
 
 const products = [
   {
     id: 1,
     description: 'Денис узнал как работает альпинистская страховка и перестал бояться высоты',
-    imageSrc: '/src/assets/experience/image1.png',
+    imageSrc: image1,
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 2,
     description: 'Миша научился управлять байдаркой и доплыл до уникальных островов Карелии',
-    imageSrc: '/src/assets/experience/image2.png',
+    imageSrc: image2,
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 3,
     description: 'Вова увидел снег летом и рассказал об этом своим друзьям',
-    imageSrc: '/src/assets/experience/image3.png',
+    imageSrc: image3,
     imageAlt: 'Brass scissors with geometric design, black steel finger holes, and included upright brass stand.',
   },
   {
     id: 4,
     description: 'Коля сплавился на рафте по горной реке и снял об этом влог',
-    imageSrc: '/src/assets/experience/image4.png',
+    imageSrc: image4,
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 5,
     description: 'Ваня выполнял обязанности шеф-повара и познал все тонкости полевой кухни',
-    imageSrc: '/src/assets/experience/image5.png',
+    imageSrc: image5,
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 6,
     description: 'Сережа и Кирилл покорили вершины Алтайского Края и узнали многое о горных породах',
-    imageSrc: '/src/assets/experience/image6.png',
+    imageSrc: image6,
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
   {
     id: 7,
     description: 'Варя и Кристина побывали в Архангельской области и научились народным ремеслам Русского Севера',
-    imageSrc: '/src/assets/experience/image7.png',
+    imageSrc: image7,
     imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
   },
 ]

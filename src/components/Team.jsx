@@ -1,14 +1,17 @@
+import foto1 from '../assets/team/kosatka.jpg'
+import foto2 from '../assets/team/grizzly.jpg'
+
 const people = [
   {
     name: 'Марина Соколова',
     role: 'Руководитель проекта',
-    imageUrl: './src/assets/team/kosatka.jpg',
+    imageUrl: foto1,
     bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
   },
   {
     name: 'Елизавета Новицкая',
     role: 'Руководитель проекта',
-    imageUrl: './src/assets/team/grizzly.jpg',
+    imageUrl: foto2,
     bio: 'Turpis lectus et amet elementum. Mi duis integer sed in vitae consequat. Nam vitae, in felis mi dui tempus. Porta at turpis eu odio. Et, sed duis in blandit bibendum accumsan. Purus viverra facilisi suspendisse quis est.',
   },
 ]

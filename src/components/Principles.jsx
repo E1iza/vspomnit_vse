@@ -1,20 +1,25 @@
+import mainImg from '../assets/principles/main.jpg'
+import icon1 from '../assets/principles/icon1.svg'
+import icon2 from '../assets/principles/icon2.svg'
+import icon3 from '../assets/principles/icon3.svg'
+
 const incentives = [
   {
     name: 'Гуманная педагогика',
-    imageSrc: '/src/assets/principles/icon1.svg',
+    imageSrc: icon1,
     description: "В работе с подростками разделяем и применяем педагогические ценности, описанные в трудах следующих авторов: " +
       "Януш Корчак, Людмила Петрановская, Симон Соловейчик, Василий Зеньковский и других.",
   },
   {
     name: 'Самостоятельность и адаптивность',
-    imageSrc: '/src/assets/principles/icon2.svg',
+    imageSrc: icon2,
     description: "Ночуем в палатках и самостоятельно организовываем кемпинговую зону.\n" +
       "Каждый имеет зоны ответственности, дежурств и обязанностей, " +
       "что формирует дисциплину, взаимопомощь и способность быстро адаптироваться к внешним условиям.",
   },
   {
     name: 'Обучение через дело',
-    imageSrc: '/src/assets/principles/icon3.svg',
+    imageSrc: icon3,
     description:
       "В ходе экспедиции ребята учатся коммуникациям друг с другом, приобретают навык работы в команде, " +
       "умение анализировать информацию и принимать решения, а также навыки походной жизни.",
@@ -40,7 +45,7 @@ export default function Principles() {
             </div>
             <img
               alt=""
-              src={'/src/assets/principles/main.jpg'}
+              src={mainImg}
               className="aspect-3/2 w-full rounded-lg bg-gray-100 object-cover"
             />
           </div>
