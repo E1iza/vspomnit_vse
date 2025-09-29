@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import mainImage from '../assets/main.png'
 
 const navigation = [
   { name: 'О проекте', href: '#' },
@@ -104,7 +105,7 @@ export default function MainPage() {
           />
           <img
             alt="main"
-            src={'/src/assets/main.png'}
+            src={mainImage}
             className="absolute inset-0 -z-10 w-full h-full object-cover opacity-100"
           />
         </div>
