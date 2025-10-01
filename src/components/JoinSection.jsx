@@ -1,3 +1,4 @@
+import { useRefs } from "../contexts/RefContext.jsx";
 import baikal from '../assets/joinExpedition/baikal.jpg'
 
 const benefits = [
@@ -10,8 +11,13 @@ const benefits = [
 ]
 
 export default function JoinSection() {
+  const { joinSectionRef } = useRefs();
+
   return (
-    <div className="overflow-hidden bg-white py-12 sm:py-16 dark:bg-gray-900">
+    <div
+      ref={joinSectionRef}
+      className="overflow-hidden bg-white py-12 sm:py-16 dark:bg-gray-900"
+    >
       <div className="relative isolate">
         <div className="mx-auto max-w-7xl ">
           <div className="mx-auto p-6 lg:p-8 flex max-w-2xl flex-col gap-16 bg-white/75 shadow-lg ring-1 ring-gray-900/5 sm:rounded-3xl lg:mx-0 lg:max-w-none lg:flex-row lg:items-center xl:gap-x-10 dark:bg-white/3 dark:shadow-none dark:ring-white/10">

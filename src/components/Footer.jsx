@@ -1,3 +1,5 @@
+import { useRefs } from "../contexts/RefContext.jsx";
+
 const navigation = {
   main: [
     { name: 'О проекте', href: '#' },
@@ -37,8 +39,13 @@ const navigation = {
 }
 
 export default function Footer() {
+  const { footerRef } = useRefs();
+
   return (
-    <footer className="bg-cyan-700 text-white dark:bg-gray-900">
+    <footer
+      ref={footerRef}
+      className="bg-cyan-700 text-white dark:bg-gray-900"
+    >
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav aria-label="Footer" className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6">
           {navigation.main.map((item) => (

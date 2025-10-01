@@ -9,10 +9,11 @@ import Team from "./components/Team.jsx";
 import Footer from "./components/Footer.jsx";
 import ButtonFixed from "./components/UI/ButtonFixed.jsx";
 import JoinSection from "./components/JoinSection.jsx";
+import { RefProvider } from "./contexts/RefContext.jsx";
 
 function App() {
   return (
-    <>
+    <RefProvider>
       <MainPage />
       <ButtonFixed />
       <Mission />
@@ -22,7 +23,7 @@ function App() {
       <Team />
       <JoinSection />
       <Footer />
-    </>
+    </RefProvider>
   )
 }
 

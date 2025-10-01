@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useMediaQuery } from 'react-responsive'
+import { useRefs } from "../contexts/RefContext.jsx";
 import desktopImg from '../assets/main.png'
 import mobileImg from '../assets/main_mobile.png'
 
@@ -14,9 +15,13 @@ const navigation = [
 export default function MainPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const isMobile = useMediaQuery({ maxWidth: 768 })
+  const { mainRef } = useRefs()
 
   return (
-    <div className="bg-white dark:bg-gray-900 height-auto">
+    <div
+      ref={mainRef}
+      className="bg-white dark:bg-gray-900 height-auto"
+    >
       <header className="absolute inset-x-0 top-0 z-50 opacity-0 animate-fade-in-down">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1 items-center">

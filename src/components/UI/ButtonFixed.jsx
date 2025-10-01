@@ -1,20 +1,54 @@
 import {useEffect, useState} from "react";
+import { useRefs } from "../../contexts/RefContext.jsx";
 
 export default function ButtonFixed() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isJoinSectionVisible, setIsJoinSectionVisible] = useState(false);
+  const [isMainVisible, setIsMainVisible] = useState(false);
+  const [isFooterVisible, setIsFooterVisible] = useState(false);
+
+  const { joinSectionRef, footerRef, mainRef } = useRefs();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > window.innerHeight);
-    };
+    const mainObserver = new IntersectionObserver(([entry]) => {
+        setIsMainVisible(entry.isIntersecting);
+      }, {
+      rootMargin: '0px 0px 0px -50px',
+      threshold: 0
+    })
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
+    const joinSectionObserver = new IntersectionObserver(([entry]) => {
+      setIsJoinSectionVisible(entry.isIntersecting);
+    }, {
+      rootMargin: '0px 0px 0px 0px',
+      threshold: 1
+    })
+
+    const footerObserver = new IntersectionObserver(([entry]) => {
+      setIsFooterVisible(entry.isIntersecting);
+    }, {
+      rootMargin: '-50px 0px 0px 0px',
+      threshold: 0
+    })
+
+    if (mainRef.current) {
+      mainObserver.observe(mainRef.current);
+    }
+    if (joinSectionRef.current) {
+      joinSectionObserver.observe(joinSectionRef.current);
+    }
+    if (footerRef.current) {
+      footerObserver.observe(joinSectionRef.current);
+    }
+
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      mainObserver.disconnect();
+      joinSectionObserver.disconnect();
+      footerObserver.disconnect();
     };
-  }, []);
+  }, [mainRef, joinSectionRef, footerRef]);
+
+  if (isMainVisible || isJoinSectionVisible || isFooterVisible) return null;
 
   return (
     <button className={`
@@ -24,14 +58,11 @@ export default function ButtonFixed() {
       <a
         href="#"
         className={`
+          flex bottom-5 right-5 z-100 fixed
           rounded-2xl bg-cyan-700 p-3 text-md font-semibold text-white shadow-xs
           hover:bg-cyan-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
           transition-all duration-500
           animate-pulse-ring
-          ${isScrolled
-            ? 'flex bottom-5 right-5 z-100 fixed'
-            : 'hidden'
-        }
         `}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="white"
