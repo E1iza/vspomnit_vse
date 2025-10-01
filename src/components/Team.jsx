@@ -6,13 +6,19 @@ const people = [
     name: 'Марина Соколова',
     role: 'Руководитель проекта',
     imageUrl: foto1,
-    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+    bio: 'Опытный педагог с пониманием потребностей подростков и успешным опытом работы в образовательной среде. ' +
+      'Организатор проектной деятельности, выездных мероприятий, палаточных лагерей и походов для детей. ' +
+      'Владеет методикой тьюторского сопровождения и создает увлекательные и познавательные программы для учеников. ' +
+      'Руководитель подросткового скаутского клуба.',
   },
   {
     name: 'Елизавета Новицкая',
     role: 'Руководитель проекта',
     imageUrl: foto2,
-    bio: 'Turpis lectus et amet elementum. Mi duis integer sed in vitae consequat. Nam vitae, in felis mi dui tempus. Porta at turpis eu odio. Et, sed duis in blandit bibendum accumsan. Purus viverra facilisi suspendisse quis est.',
+    bio: 'Больше 10 лет опыта проведения детских палаточных лагерей, походов и выездов. ' +
+      'На постоянной основе ведет занятия для группы подростков по саутской методике, изучая туристическую практику, краеведение и историю России. ' +
+      'Применяет системный подход в организации проектов, объединяя теорию, практику и игровые форматы для лучшего погружения в образовательный процесс ' +
+      'и усвоения новых знаний и навыков.',
   },
 ]
 
