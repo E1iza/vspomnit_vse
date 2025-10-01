@@ -8,6 +8,7 @@ import ExperienceList from './components/ExperienceList.jsx';
 import Team from "./components/Team.jsx";
 import Footer from "./components/Footer.jsx";
 import ButtonFixed from "./components/UI/ButtonFixed.jsx";
+import JoinSection from "./components/JoinSection.jsx";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Directions />
       <Principles />
       <ExperienceList />
-      <Team/>
+      <Team />
+      <JoinSection />
       <Footer />
     </>
   )
