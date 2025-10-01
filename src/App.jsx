@@ -7,32 +7,18 @@ import Principles from "./components/Principles.jsx";
 import ExperienceList from './components/ExperienceList.jsx';
 import Team from "./components/Team.jsx";
 import Footer from "./components/Footer.jsx";
-// import { testData } from './data';
-
-function TestUl({ data }) {
-  return (
-    <ul>
-      {data.map(({ id, title, description }) => (
-        <li key={id}>
-          <p>
-            <strong>{title}</strong>. {description}
-          </p>
-        </li>
-        ))}
-    </ul>
-  )
-}
+import ButtonFixed from "./components/UI/ButtonFixed.jsx";
 
 function App() {
   return (
     <>
       <MainPage />
+      <ButtonFixed />
       <Mission />
       <Directions />
       <Principles />
       <ExperienceList />
       <Team/>
-
       <Footer />
     </>
   )
