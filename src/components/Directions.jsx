@@ -17,11 +17,10 @@ export default function Directions() {
               className="object-cover"
             />
             <h3 className="text-3xl md:text-4xl mb-6 font-semibold tracking-tight text-pretty text-[#1A430B]">туризм</h3>
-            <p className="text-base text-justify text-gray-600 dark:text-gray-200">
+            <p className="text-xl text-justify text-gray-600 dark:text-gray-200">
               Мы открываем уникальные уголки России, где природа рассказывает свои древние истории.
-              От карельских лесов до камчатских вулканов, от алтайских гор до байкальских глубин — каждый маршрут уникален.
               Походный быт учит простым истинам: ценить тепло костра, вкус родниковой воды и красоту звездного неба.
-              Пешие походы и сплавы по рекам, велосипедные маршруты и восхождения — каждая экспедиция предлагает новый вызов.
+              Пешие походы и сплавы по рекам, велосипедные маршруты и горные восхождения — каждая экспедиция предлагает новый вызов.
             </p>
             <img
               alt=""
@@ -30,8 +29,8 @@ export default function Directions() {
             />
           </div>
           <div className="flex row-start-1 w-full lg:row-start-2 items-center justify-center relative">
-            <p className="text-2xl font-semibold tracking-tight text-pretty text-gray-600 text-center lg:w-2/3">
-              Наши поездки включают в себя три направления, которые способствуют глубокому и разностороннему изучению места экспедиции
+            <p className="text-3xl font-semibold tracking-tight text-pretty text-gray-600 text-center lg:w-2/3">
+              Наши поездки включают в себя три направления
             </p>
               <img
                 alt=""
@@ -46,10 +45,9 @@ export default function Directions() {
               className="object-cover"
             />
             <h3 className="text-3xl md:text-4xl -mt-8 mb-6 lg:-mt-12 font-semibold tracking-tight text-pretty text-[#552A00]">краеведение</h3>
-            <p className="text-base text-gray-600 dark:text-gray-200 text-justify">
-              Краеведение в наших экспедициях подразумевает изучение природы, историю и культуру конкретного региона,
-              собирая материалы через полевые экспедиции, архивные исследования и интервью с местными жителями.
-              Его цель — сохранение и популяризация местного наследия, поддержка региональной идентичности, охрана памятников и развитие туризма.
+            <p className="text-xl text-gray-600 dark:text-gray-200 text-justify">
+              Мы изучаем историю и культуру региона экспедиции через проведение исследований, интервью с местными жителями, посещение значимых культурных мест.
+              Погружение в местный фольклор создает связь с прошлым и формирует личное отношение к исторической памяти.
             </p>
           </div>
           <div className="flex flex-col justify-center relative lg:col-span-2 lg:row-start-3 lg:w-2/3 lg:flex-col-reverse lg:items-start lg:-top-20">
@@ -63,10 +61,9 @@ export default function Directions() {
                 />
               </div>
               <div className="items-end flex w-2/3 relative lg:-bottom-10">
-                <p className="text-base text-gray-600 dark:text-gray-200 text-justify text-balance">
+                <p className="text-xl text-gray-600 dark:text-gray-200 text-justify text-balance">
                   Мы меняем мир к лучшему, объединяя усилия с другими сообществами для реализации волонтерских проектов,
-                  оказывая конкретную помощь посещаемому региону, бережно сохраняя культурное наследие.
-                  Для нас волонтёрство — это диалог с прошлым, который помогает преобразовывать будущее.
+                  оказывая конкретную помощь местным жителям и бережно сохраняя культурное наследие.
                 </p>
               </div>
             </div>
